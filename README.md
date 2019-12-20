@@ -1,4 +1,4 @@
-## Omikujibot
+### Omikujibot
 
 「占って」と言うと、「大吉」や「凶」などランダムで返事が返ってくる
 シンプルなSlackbotです。
