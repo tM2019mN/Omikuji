@@ -1,7 +1,7 @@
 require 'slack-ruby-client'
 
   Slack.configure do |conf|
-    conf.token = 'xoxb-*********'
+    conf.token = 'xoxb-*********' #取得したTOKENを入力します
   end
 
   # RTM Clientのインスタンス生成
