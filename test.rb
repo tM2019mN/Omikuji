@@ -1,7 +1,7 @@
 require 'slack-ruby-client'
 
   Slack.configure do |conf|
-    conf.token = 'xoxb-*********' #取得したTOKENを入力します
+    conf.token = 'xoxb-1234567890abcdefg'  #取得したTOKENを入力します
   end
 
   # RTM Clientのインスタンス生成
@@ -17,7 +17,7 @@ require 'slack-ruby-client'
   # ユーザからのメッセージを検知したときの処理
   client.on :message do |data|
     if data['text'].include?('こんにちは')
-      client.message channel: data['channel'], text: "Hi!"
+      client.message channel: data['channel'], text: "Hi!!!"
     end
     if data['text'].include?('かしこい') || data['text'].include?('えらい')
       client.message channel: data['channel'], text: "Thank you!"
